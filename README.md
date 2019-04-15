@@ -1,4 +1,5 @@
-# Book-Tickets - System sprzedaży(rezerwacji) biletów kinowych
+# Book-Tickets - 
+## System sprzedaży(rezerwacji) biletów kinowych
  
 Aplikacja umożliwia rezerwację biletów na seans kinowy.
 System wystawia zewnętrzny interfejs REST umożliwiający elektroniczną weryfikację biletu.
