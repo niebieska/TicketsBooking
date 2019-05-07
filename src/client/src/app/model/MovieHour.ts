@@ -1,4 +1,3 @@
-import {Movie} from "./Movie";
 import {MovieType} from "./MovieType";
 
 export class MovieHour {
