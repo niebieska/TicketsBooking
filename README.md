@@ -6,8 +6,7 @@ System wystawia zewnętrzny interfejs REST umożliwiający elektroniczną weryfi
 
 
 
-1) Proces wyboru filmu ma charakter statyczny. Istnieje skończona ilość dostępnych filmów wraz z lakonicznym opisem,
-dla których można dokonać zakupu lub rezerwacji biletu.( wybór filmu, wybór godziny, rozpoczecie procesu zakupu/rezerwacji)
+1) Pierwszy etap procesu zakupu biletu. Sposród udostępnionej listy filmów (dla jedego wybranego losowo dnia) można dokonać zakupu lub rezerwacji biletu.( wybór filmu, wybór godziny, rozpoczecie procesu zakupu/rezerwacji)
 
 2) Część obejmująca wizualizację sali kinowej umożliwiająca wybór konkretnego miejsca (można wybrać dowolną liczbę miejsc z dostępnych),
  decyzję o  rezerwacji lub zakupie oraz uzupełnienie danych kupującego, a w przypadku zakupu decyzję o typie biletu i metodzie płatności.
