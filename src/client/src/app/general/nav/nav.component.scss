@@ -4,14 +4,15 @@
   height: 40px;
   display: inline-block;
   line-height: 40px;
-  float: inherit;
+  float: left;
+  text-align: center;
 }
 
 .header-list{
-  float: right;
+  //float: right;
   padding: 0;
   margin: 0 5px;
-  background-color:  #74574F;
+ // background-color:  #74574F;
   font-family:  "Georgia";
   font-size: large;
 }
@@ -20,7 +21,9 @@
   float: right;
   margin: 0 5px;
 }
-.img {alignment: center}
+img { display: block;
+  margin-left: auto;
+  margin-right: auto }
 
 
 
