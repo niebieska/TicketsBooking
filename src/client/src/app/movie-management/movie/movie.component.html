@@ -1,23 +1,25 @@
-<table>
-  <thead>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Image</th>
-    <th>Genre</th>
-    <th>Duration</th>
-    <th>MovieTypes</th>
-    <th>&nbsp;</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let movie of currentMovies">
-    <td>{{movie.title}}</td>
-    <td>{{movie.description}}</td>
-    <td>{{movie.image}}</td>
-    <td>{{movie.genre}}</td>
-    <td>{{movie.duration}}</td>
-    <td>{{movie.movieTypes}}</td>
-  </tr>
-  </tbody>
-</table>
+<mat-card *ngFor="let movie of currentMovies" class="mat_card_box">
+  <mat-card-content>
+    <table class="movieTable">
+      <tr>
+        <td colspan="4" class="movieTitle">
+          <h2>{{movie.title}}</h2>
+        </td>
+      </tr>
+      <tr>
+        <td class="movieTitle">
+          <p><img class="movieImg" src="{{movie.image}}" alt="{{movie.title}}"/></p>
+        </td>
+        <td class="movieElem">
+          <p>{{movie.title}}</p>
+          <p>{{movie.genre}}</p>
+          <p>{{movie.duration}} min</p>
+        </td>
+        <td class="movieType">Type</td>
+        <td class="movieHour">Hours</td>
+      </tr>
+    </table>
+
+  </mat-card-content>
+</mat-card>
+
