@@ -1,15 +1,15 @@
 .repertory{
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 25px;
+  color:  #78452F;
   display: inline-block;
   margin-right: 15px;
 }
 
 .repertoryInformation{
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   padding-right: 3px;
-  border-right: gray 1pt dotted;
+  border-right: gray 2pt dotted;
   margin-right: 6px;
 }
 
@@ -18,9 +18,9 @@
 }
 
 .buttonDark{
-  background-color: #74574F;
+  background-color:  	#E8420B !important;
   color: white;
-  height: 25px;
+  height: 35px;
   line-height: 25px;
 }
 
@@ -37,6 +37,8 @@
 .movieTitle{
   width: 100%;
   margin-left: 20px;
+  text-align: left;
+  color: #5DBCD2;
 }
 
 .movieCatBox{
@@ -101,4 +103,10 @@
 
 .movieButton{
   margin-left: 5px;
+}
+
+.mat-raised-button
+{
+  background-color: #78452F;
+
 }
