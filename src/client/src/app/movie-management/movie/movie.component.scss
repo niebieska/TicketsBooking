@@ -34,45 +34,69 @@
   background-color: cornsilk;
 }
 
-.movieTable{
+.movieTitle{
   width: 100%;
-  text-align: center;
-  table-layout:fixed;
+  margin-left: 20px;
 }
 
-.movieTitle{
-  width: 200px;
-  text-align: left;
+.movieCatBox{
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.movieCatBox2{
+  padding-left: 20px;
+  width: calc(50% - 40px); //movieCatBox margin-left + movieCatBox2 padding-left
+  display: inline-block;
 }
 
 .movieImgBox{
-  width: 20%;
-  text-align: left;
-  vertical-align: top;
+  width: 200px;
+  margin-right: 30px;
+  display: inline-block;
 }
 
 .movieImg{
   max-width: 200px;
 }
 
-.movieElem{
-  width: 300px;
-  text-align: left;
+.movieInformationBox{
+  width: calc(100% - 230px);
+  display: inline-block;
   vertical-align: top;
 }
 
 .movieTypesBlock{
-  height: 100px;
+  height: 50px;
+  width: 100%;
+}
+
+.tableMovieType {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
 }
 
 .movieType{
-  width: 33%;
-
+  width: 25%;
+  font-weight: bold;
+  font-size: 15px;
+  border-left: 1px black solid;
+  border-bottom: 1px black solid;
+  border-top: 1px black solid;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .movieHour{
-  width: 33%;
-
+  width: 75%;
+  border-right: 1px black solid;
+  border-bottom: 1px black solid;
+  border-top: 1px black solid;
+  margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 .movieButton{

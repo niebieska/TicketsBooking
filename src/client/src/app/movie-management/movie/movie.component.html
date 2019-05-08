@@ -27,34 +27,34 @@
 
 <mat-card *ngFor="let movie of currentMovies" class="mat_card_box">
   <mat-card-content>
-    <table class="movieTable">
-      <tr>
-        <td colspan="4" class="movieTitle">
-          <h2>{{movie.title}}</h2>
-        </td>
-      </tr>
-      <tr>
-        <td class="movieImgBox" [rowSpan]="movie.movieTypes.length + 1">
-          <p><img class="movieImg" [src]="movie.image" alt="{{movie.title}}"/></p>
-        </td>
-        <td class="movieElem" [rowSpan]="movie.movieTypes.length + 1">
-          <p>{{movie.title}}</p>
-          <p>{{movie.genre}}</p>
-          <p>{{movie.duration}} min</p>
-          <b>Opis filmu</b><br/>
-          {{movie.description}}
-        </td>
-      </tr>
-      <tr *ngFor="let movieType of movie.movieTypes" class="movieTypesBlock">
-        <td class="movieType">
-          {{movieType.name}}
-        </td>
-        <td class="movieHour">
-          <a *ngFor="let hour of movieType.movieHours" mat-raised-button color="primary" class="movieButton"
-             href="#">{{hour.hour}}</a>
-        </td>
-      </tr>
-    </table>
+    <div class="movieTitle">
+      <h2>{{movie.title}}</h2>
+    </div>
+    <div class="movieCatBox">
+      <div class="movieImgBox">
+        <p><img class="movieImg" [src]="movie.image" alt="{{movie.title}}"/></p>
+      </div>
+      <div class="movieInformationBox">
+        <p>{{movie.title}}</p>
+        <p>{{movie.genre}}</p>
+        <p>{{movie.duration}} min</p>
+        <b>Opis filmu</b><br/>
+        {{movie.description}}
+      </div>
+    </div>
+    <div class="movieCatBox2">
+      <table class="tableMovieType">
+        <tr *ngFor="let movieType of movie.movieTypes" class="movieTypesBlock">
+          <td class="movieType">
+            {{movieType.name}}
+          </td>
+          <td class="movieHour">
+            <a *ngFor="let hour of movieType.movieHours" mat-raised-button color="primary" class="movieButton"
+               href="#">{{hour.hour}}</a>
+          </td>
+        </tr>
+      </table>
+    </div>
   </mat-card-content>
 </mat-card>
 
