@@ -3,13 +3,19 @@
   text-align: center;
 }
 
-.movieImg{
-  max-width: 200px;
-}
-
 .movieTitle{
   width: 20%;
   text-align: left;
+}
+
+.movieImgBox{
+  width: 20%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.movieImg{
+  max-width: 200px;
 }
 
 .movieElem{
@@ -18,10 +24,22 @@
   vertical-align: top;
 }
 
+.movieTypesBlock{
+  height: 100px;
+}
+
 .movieType{
   width: 33%;
+
+  border-top:1pt solid black;
 }
 
 .movieHour{
   width: 33%;
+
+  border-top:1pt solid black;
+}
+
+.movieButton{
+  margin-left: 5px;
 }

@@ -7,19 +7,26 @@
         </td>
       </tr>
       <tr>
-        <td class="movieTitle">
-          <p><img class="movieImg" src="{{movie.image}}" alt="{{movie.title}}"/></p>
+        <td class="movieImgBox" [rowSpan]="movie.movieTypes.length + 1">
+          <p><img class="movieImg" [src]="movie.image" alt="{{movie.title}}"/></p>
         </td>
-        <td class="movieElem">
+        <td class="movieElem" [rowSpan]="movie.movieTypes.length + 1">
           <p>{{movie.title}}</p>
           <p>{{movie.genre}}</p>
           <p>{{movie.duration}} min</p>
+          <b>Opis filmu</b><br />
+          {{movie.description}}
         </td>
-        <td class="movieType">Type</td>
-        <td class="movieHour">Hours</td>
+      </tr>
+      <tr *ngFor="let movieType of movie.movieTypes" class="movieTypesBlock">
+        <td class="movieType">
+          {{movieType.name}}
+        </td>
+        <td class="movieHour">
+          <a *ngFor="let hour of movieType.movieHours" mat-raised-button color="primary" class="movieButton" href="#">{{hour.hour}}</a>
+        </td>
       </tr>
     </table>
-
   </mat-card-content>
 </mat-card>
 
