@@ -24,13 +24,24 @@
   line-height: 25px;
 }
 
+.dayButton{
+
+}
+
+.checkedButton{
+  border-color: #74574F;
+  border-width: 2px;
+  background-color: cornsilk;
+}
+
 .movieTable{
   width: 100%;
   text-align: center;
+  table-layout:fixed;
 }
 
 .movieTitle{
-  width: 20%;
+  width: 200px;
   text-align: left;
 }
 
@@ -45,7 +56,7 @@
 }
 
 .movieElem{
-  width: 13%;
+  width: 300px;
   text-align: left;
   vertical-align: top;
 }
@@ -57,13 +68,11 @@
 .movieType{
   width: 33%;
 
-  border-top:1pt solid black;
 }
 
 .movieHour{
   width: 33%;
 
-  border-top:1pt solid black;
 }
 
 .movieButton{
