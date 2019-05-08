@@ -18,7 +18,7 @@
 }
 
 .buttonDark{
-  background-color:  	#E8420B;
+  background-color:  	#E8420B !important;
   color: white;
   height: 35px;
   line-height: 25px;
@@ -44,6 +44,7 @@
 .movieTitle{
   width: 200px;
   text-align: left;
+  color: #5DBCD2;
 }
 
 .movieImgBox{
@@ -74,8 +75,15 @@
 .movieHour{
   width: 33%;
 
+
 }
 
 .movieButton{
   margin-left: 5px;
+}
+
+.mat-raised-button
+{
+  background-color: #78452F;
+
 }

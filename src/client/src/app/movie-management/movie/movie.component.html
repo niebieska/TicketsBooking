@@ -38,7 +38,7 @@
           <p><img class="movieImg" [src]="movie.image" alt="{{movie.title}}"/></p>
         </td>
         <td class="movieElem" [rowSpan]="movie.movieTypes.length + 1">
-          <p>{{movie.title}}</p>
+          <!--<p>{{movie.title}}</p>-->
           <p>{{movie.genre}}</p>
           <p>{{movie.duration}} min</p>
           <b>Opis filmu</b><br/>
@@ -50,7 +50,7 @@
           {{movieType.name}}
         </td>
         <td class="movieHour">
-          <a *ngFor="let hour of movieType.movieHours" mat-raised-button color="primary" class="movieButton"
+          <a *ngFor="let hour of movieType.movieHours" mat-raised-button color="#08CBC2" class="movieButton"
              href="#">{{hour.hour}}</a>
         </td>
       </tr>
