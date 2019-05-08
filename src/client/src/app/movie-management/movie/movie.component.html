@@ -1,3 +1,30 @@
+<mat-card class="mat_card_box">
+  <mat-card-content style="">
+    <div class="repertory">
+      REPERTUAR
+    </div>
+    <div class="repertoryInformation">
+      Czwartek 9.05
+    </div>
+    <div class="repertoryInformation">
+      Wrocław Cinema Elit Galeria Wroclavia
+    </div>
+    <div class="ticketsCost">
+      <button mat-raised-button class="buttonDark">Cennik biletów</button>
+    </div>
+    <div class="ticketsCost" style="float: right;">
+      <button mat-stroked-button class="dayButton">DZIŚ</button>
+      <button mat-stroked-button class="dayButton">PT</button>
+      <button mat-stroked-button class="dayButton">SOB</button>
+      <button mat-stroked-button class="dayButton">NIE</button>
+      <button mat-stroked-button class="dayButton">PN</button>
+      <button mat-stroked-button class="dayButton">WT</button>
+      <button mat-stroked-button class="dayButton">ŚR</button>
+      <button mat-stroked-button class="dayButton"><mat-icon>apps</mat-icon></button>
+    </div>
+  </mat-card-content>
+</mat-card>
+
 <mat-card *ngFor="let movie of currentMovies" class="mat_card_box">
   <mat-card-content>
     <table class="movieTable">
@@ -14,7 +41,7 @@
           <p>{{movie.title}}</p>
           <p>{{movie.genre}}</p>
           <p>{{movie.duration}} min</p>
-          <b>Opis filmu</b><br />
+          <b>Opis filmu</b><br/>
           {{movie.description}}
         </td>
       </tr>
@@ -23,7 +50,8 @@
           {{movieType.name}}
         </td>
         <td class="movieHour">
-          <a *ngFor="let hour of movieType.movieHours" mat-raised-button color="primary" class="movieButton" href="#">{{hour.hour}}</a>
+          <a *ngFor="let hour of movieType.movieHours" mat-raised-button color="primary" class="movieButton"
+             href="#">{{hour.hour}}</a>
         </td>
       </tr>
     </table>
