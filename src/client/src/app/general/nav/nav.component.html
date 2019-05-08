@@ -1,8 +1,29 @@
+<div>
+  <img class="img-responsive main-logo" alt="Logo" src="/assets/img/Logo.png">
+  <!--<p class="header-list">Book Tickets</p>-->
+</div>
+
 <div class="header">
-  <button mat-icon-button  [matMenuTriggerFor]="menu"><mat-icon>more_horiz</mat-icon></button>
+  <button mat-button [matMenuTriggerFor]="menu">Offers</button>
+  <!--<button mat-icon-button  [matMenuTriggerFor]="menu"><mat-icon>more_horiz</mat-icon></button>-->
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
+    <button mat-menu-item>For Her</button>
+    <button mat-menu-item> For Family</button>
+    <button mat-menu-item>Gift Card</button>
+    <button mat-menu-item> Cheap Wensday</button>
+    <button mat-menu-item>Unlimited</button>
   </mat-menu>
-  <p class="header-list">Welcome to Book-Ticket!</p>
+  <button mat-button [matMenuTriggerFor]="menu2">Repertuar</button>
+  <mat-menu #menu2="matMenu"></mat-menu>
+  <button mat-button [matMenuTriggerFor]="menu3">Gifts</button>
+  <mat-menu #menu3="matMenu"></mat-menu>
+  <button mat-button [matMenuTriggerFor]="menu3">Our Cinemas</button>
+  <mat-menu #menu3="matMenu">
+    <button mat-menu-item>Glasgow</button>
+    <button mat-menu-item>London</button>
+    <button mat-menu-item>Oxford</button>
+    <button mat-menu-item>Liverpool</button>
+  </mat-menu>
+
+
 </div>
