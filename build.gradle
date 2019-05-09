@@ -32,4 +32,8 @@ bootJar {
     }
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '5.4.1'
+}
+
 processResources.dependsOn(':src:client:build')
