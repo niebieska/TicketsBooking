@@ -14,5 +14,4 @@ System wystawia zewnętrzny interfejs REST umożliwiający elektroniczną weryfi
 W przypadku rezerwacji wygenerowanie "miejscówki" o określonej ważności,weryfikowanej przez system przy kasie. 
 W przypadku zakupu biletu wygenerowanie jego treści i kodu QR/ tokenu sprawdzanego przez biletera.
  
- 
 3) Weryfikacja w biletów( rezerwacji) w systemie zewnętrznym.
