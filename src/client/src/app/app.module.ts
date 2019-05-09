@@ -7,6 +7,7 @@ import {GeneralModule} from "./general/general.module";
 import {MovieManagementModule} from "./movie-management/movie-management.module";
 import {HttpClientModule} from "@angular/common/http";
 import {MovieService} from "./movie-management/movie.service";
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import {MovieService} from "./movie-management/movie.service";
     MovieManagementModule
   ],
   providers: [MovieService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

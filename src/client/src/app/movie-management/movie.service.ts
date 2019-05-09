@@ -8,7 +8,7 @@ import {Movie} from "../model/Movie";
 })
 export class MovieService {
 
-  private mainHttp: string = "http://localhost:8080/";
+  private mainHttp: string = "";
 
   constructor(private http: HttpClient) { }
 

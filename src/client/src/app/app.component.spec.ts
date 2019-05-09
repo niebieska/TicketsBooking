@@ -1,16 +1,28 @@
 import { TestBed, async } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import {BrowserModule} from "@angular/platform-browser";
+import {AppRoutingModule} from "./app-routing.module";
+import {GeneralModule} from "./general/general.module";
+import {MovieManagementModule} from "./movie-management/movie-management.module";
+import {MovieService} from "./movie-management/movie.service";
+import {CUSTOM_ELEMENTS_SCHEMA} from "@angular/core";
+import {HttpClientTestingModule} from "@angular/common/http/testing";
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
       declarations: [
         AppComponent
       ],
+      imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientTestingModule,
+        GeneralModule,
+        MovieManagementModule
+      ],
+      providers: [MovieService],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     }).compileComponents();
   }));
 
@@ -26,10 +38,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('client');
   });
 
-  it('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to client!');
-  });
 });

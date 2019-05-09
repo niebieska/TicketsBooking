@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MovieComponent } from './movie/movie.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule, MatIconModule} from "@angular/material";
+import { MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [MovieComponent],
@@ -10,7 +11,8 @@ import {MatButtonModule, MatIconModule} from "@angular/material";
     CommonModule,
     MatCardModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatMenuModule
   ]
 })
 export class MovieManagementModule { }

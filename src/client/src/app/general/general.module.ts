@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { NavComponent } from './nav/nav.component';
 import {MatButtonModule, MatIconModule, MatMenuModule} from "@angular/material";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [NavComponent],
@@ -12,8 +11,7 @@ import { RouterModule } from '@angular/router';
     MatMenuModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule,
-    RouterModule
+    MatIconModule
   ],
   exports: [NavComponent]
 })
